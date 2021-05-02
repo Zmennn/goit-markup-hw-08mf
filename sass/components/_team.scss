@@ -1,0 +1,75 @@
+.team {
+  background-color: $second-bg-color;
+}
+.team__title {
+  margin-bottom: 50px;
+  color: $primari-title-color;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team__title {
+  @include tablet {
+    font-size: 28px;
+    line-height: 1, 178;
+    margin-bottom: 30px;
+  }
+}
+.team__subtitle {
+  color: $primari-title-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+.team__text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.team__item {
+  --grid-item: 4;
+}
+.team__item {
+  @include tablet {
+    --grid-item: 2;
+  }
+}
+.team__item {
+  @include phone {
+    --grid-item: 1;
+  }
+}
+.team__container {
+  padding-bottom: 23px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $primery-bg-color;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__container {
+  @include tablet {
+    padding-bottom: 25px;
+  }
+}
+.team__img {
+  object-fit: cover;
+  width: 100%;
+}
+.team__img {
+  @include tablet {
+    height: 374px;
+  }
+}
+.team__img {
+  @include phone {
+    height: 460px;
+  }
+}

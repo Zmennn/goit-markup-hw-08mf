@@ -1,0 +1,31 @@
+.our-features__item {
+  --grid-item: 4;
+  height: 251px;
+}
+.our-features__item {
+  @include tablet {
+    --grid-item: 2;
+  }
+}
+.our-features__item {
+  @include phone {
+    --grid-item: 1;
+    height: 226px;
+  }
+}
+.our-features__container {
+  height: 120px;
+  background-color: $second-bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.our-features__subtitle {
+  color: $primari-title-color;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

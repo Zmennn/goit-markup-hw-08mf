@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Студия</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+    
+            <a class="logo" href="./index.html">Web<span class="logo__text--black">Studio</span></a>
+            <nav class="nav">
+                <ul class="nav__list list">
+                    <li class="nav__item"><a class="nav__link " href="./index.html">Студия</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@devstudio.com" rel="noopener noreferrer" target="_blank">
+                        <svg class="contacts__icon" width="16" height="12">
+                            <use href="./images/icons.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <svg class="contacts__icon" width="10" height="16">
+                            <use href="./images/icons.svg#icon-tel"></use>
+                        </svg>
+    
+                        +38 096 111 11 11
+    
+                    </a>
+                </li>
+            </ul>
+            <button data-menu-button class="mobile-menu-button" type="button" aria-expanded="false">
+                <svg class="mobile-menu-button__icon" aria-label="Переключатель мобильного меню" width="40" height="40">
+                    <use class="mobile-menu-button__icon-menu" href="./images/icons.svg#icon-mob-menu"></use>
+                    <use class="mobile-menu-button__icon-cross" href="./images/icons.svg#icon-mob-close"></use>
+                </svg>
+            </button>
+            <div data-menu class=" mobile-menu">
+                <nav>
+                    <ul class="list mobile-menu__list">
+                        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link ">Студия</a>
+                        </li>
+                        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link current">Портфолио</a>
+                        </li>
+                        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a class="mobile-menu__tel" href="tel:+380961111111">
+                    +38 096 111 11 11
+    
+                </a>
+                <a class="mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <ul class="list mobile-menu__social-list">
+                    <li class="mobile-menu__social-item"><a rel="noopener noreferrer" target="_blank" href=""
+                            class="mobile-menu__social-link">Instagram</a></li>
+                    <li class="mobile-menu__social-item"><a rel="noopener noreferrer" target="_blank" href=""
+                            class="mobile-menu__social-link">Twitter</a></li>
+                    <li class="mobile-menu__social-item"><a rel="noopener noreferrer" target="_blank" href=""
+                            class="mobile-menu__social-link">Facebook</a></li>
+                    <li class="mobile-menu__social-item"><a rel="noopener noreferrer" target="_blank" href=""
+                            class="mobile-menu__social-link">LinkedIn</a></li>
+                </ul>
+    
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="portfolio section">
+            <div class="container">
+                <h1 class="visually-hidden">Наши работы</h1>
+                <ul class="list portfolio__list">
+                    <li class="portfolio__item"><button class="button2 current-button2" type="button">Все</button></li>
+                    <li class="portfolio__item"><button class="button2" type="button">Веб-сайты</button></li>
+                    <li class="portfolio__item"><button class="button2" type="button">Приложения</button></li>
+                    <li class="portfolio__item"><button class="button2" type="button">Дизайн</button></li>
+                    <li class="portfolio__item"><button class="button2" type="button">Маркетинг</button></li>
+                </ul>
+
+                <ul class="gallery list grid">
+                    <li class="grid__items">
+                        <a class="gallery__link" href="">
+                            <div class="gallery__overlay-box">
+                            <picture>
+                                <source srcset="./images/portfolio/desktop/gallery_desktop_01.jpg 1x, ./images/portfolio/desktop/gallery_desktop@2_01.jpg 2x"
+                                   media="(min-width:1200px)"/>
+                                 <source srcset="./images/portfolio/tablet/gallery_tablet_01.jpg 1x, ./images/portfolio/tablet/gallery_tablet@2_01.jpg 2x"
+                                   media="(min-width:768px)">
+                                 <source srcset="./images/portfolio/phone/gallery_phone_01.jpg 1x, ./images/portfolio/phone/gallery_phone@2_01.jpg 2x "
+                                   media="(max-width: 767.98px)">
+                                <img class="gallery__img" src="./images/portfolio/desktop/gallery_desktop_01.jpg"
+                                    alt="ноутбук с открытым сайтом">
+                            </picture>
+                                <p class="gallery__overlay">Технокряк это современная площадка распространения
+                                    коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="gallery__border">
+                                <h2 class="gallery__subtitle">Технокряк</h2>
+                                <p class="gallery__text">Веб-сайт</p>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="grid__items">
+                        <a class="gallery__link" href="">
+                            <div class="gallery__overlay-box">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/desktop/gallery_desktop_02.jpg 1x, ./images/portfolio/desktop/gallery_desktop@2_02.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/tablet/gallery_tablet_02.jpg 1x, ./images/portfolio/tablet/gallery_tablet@2_02.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/phone/gallery_phone_02.jpg 1x, ./images/portfolio/phone/gallery_phone@2_02.jpg 2x "
+                                        media="(max-width: 767.98px)">
+                                    <img class="gallery__img" src="./images/portfolio/desktop/gallery_desktop_02.jpg" alt="два баскетболиста в прыжке">
+                                </picture>
+                                
+                                <p class="gallery__overlay">Технокряк это современная площадка распространения
+                                    коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="gallery__border">
+                                <h2 class="gallery__subtitle">Постер New Orlean vs Golden Star</h2>
+                                <p class="gallery__text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid__items">
+                        <a class="gallery__link" href="">
+                            <div class="gallery__overlay-box">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/desktop/gallery_desktop_03.jpg 1x, ./images/portfolio/desktop/gallery_desktop@2_03.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/tablet/gallery_tablet_03.jpg 1x, ./images/portfolio/tablet/gallery_tablet@2_03.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/phone/gallery_phone_03.jpg 1x, ./images/portfolio/phone/gallery_phone@2_03.jpg 2x "
+                                        media="(max-width: 767.98px)">
+                                    <img class="gallery__img" src="./images/portfolio/desktop/gallery_desktop_03.jpg" alt="логотип ресторана">
+                                </picture>
+                                
+                                <p class="gallery__overlay">Технокряк это современная площадка распространения
+                                    коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="gallery__border">
+                                <h2 class="gallery__subtitle">Ресторан Seafood</h2>
+                                <p class="gallery__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid__items">
+                        <a class="gallery__link" href="">
+                            <div class="gallery__overlay-box">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/desktop/gallery_desktop_04.jpg 1x, ./images/portfolio/desktop/gallery_desktop@2_04.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/tablet/gallery_tablet_04.jpg 1x, ./images/portfolio/tablet/gallery_tablet@2_04.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/phone/gallery_phone_04.jpg 1x, ./images/portfolio/phone/gallery_phone@2_04.jpg 2x "
+                                        media="(max-width: 767.98px)">
+                                    <img class="gallery__img" src="./images/portfolio/desktop/gallery_desktop_04.jpg" alt="наушники">
+                                </picture>
+                               
+                                <p class="gallery__overlay">Технокряк это современная площадка распространения
+                                    коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="gallery__border">
+                                <h2 class="gallery__subtitle">Проект Prime</h2>
+                                <p class="gallery__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid__items">
+                        <a class="gallery__link" href="">
+                            <div class="gallery__overlay-box">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/desktop/gallery_desktop_05.jpg 1x, ./images/portfolio/desktop/gallery_desktop@2_05.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/tablet/gallery_tablet_05.jpg 1x, ./images/portfolio/tablet/gallery_tablet@2_05.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/phone/gallery_phone_05.jpg 1x, ./images/portfolio/phone/gallery_phone@2_05.jpg 2x "
+                                        media="(max-width: 767.98px)">
+                                    <img class="gallery__img" src="./images/portfolio/desktop/gallery_desktop_05.jpg" alt="две коробки">
+                                </picture>
+                                
+                                <p class="gallery__overlay">Технокряк это современная площадка распространения
+                                    коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="gallery__border">
+                                <h2 class="gallery__subtitle">Проект Boxes</h2>
+                                <p class="gallery__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid__items">
+                        <a class="gallery__link" href="">
+                            <div class="gallery__overlay-box">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/desktop/gallery_desktop_06.jpg 1x, ./images/portfolio/desktop/gallery_desktop@2_06.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/tablet/gallery_tablet_06.jpg 1x, ./images/portfolio/tablet/gallery_tablet@2_06.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/phone/gallery_phone_06.jpg 1x, ./images/portfolio/phone/gallery_phone@2_06.jpg 2x "
+                                        media="(max-width: 767.98px)">
+                                    <img class="gallery__img" src="./images/portfolio/desktop/gallery_desktop_06.jpg" alt="монитор с открытым сайтом">
+                                </picture>
+                                
+                                <p class="gallery__overlay">Технокряк это современная площадка распространения
+                                    коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="gallery__border">
+                                <h2 class="gallery__subtitle">Inspiration has no Borders</h2>
+                                <p class="gallery__text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid__items">
+                        <a class="gallery__link" href="">
+                            <div class="gallery__overlay-box">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/desktop/gallery_desktop_07.jpg 1x, ./images/portfolio/desktop/gallery_desktop@2_07.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/tablet/gallery_tablet_07.jpg 1x, ./images/portfolio/tablet/gallery_tablet@2_07.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/phone/gallery_phone_07.jpg 1x, ./images/portfolio/phone/gallery_phone@2_07.jpg 2x "
+                                        media="(max-width: 767.98px)">
+                                    <img class="gallery__img" src="./images/portfolio/desktop/gallery_desktop_07.jpg" alt="открытая книга">
+                                </picture>
+                                
+                                <p class="gallery__overlay">Технокряк это современная площадка распространения
+                                    коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="gallery__border">
+                                <h2 class="gallery__subtitle">Издание Limited Edition</h2>
+                                <p class="gallery__text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid__items">
+                        <a class="gallery__link" href="">
+                            <div class="gallery__overlay-box">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/desktop/gallery_desktop_08.jpg 1x, ./images/portfolio/desktop/gallery_desktop@2_08.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/tablet/gallery_tablet_08.jpg 1x, ./images/portfolio/tablet/gallery_tablet@2_08.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/phone/gallery_phone_08.jpg 1x, ./images/portfolio/phone/gallery_phone@2_08.jpg 2x "
+                                        media="(max-width: 767.98px)">
+                                    <img class="gallery__img" src="./images/portfolio/desktop/gallery_desktop_08.jpg" alt="логотип проекта">
+                                </picture>
+                                
+                                <p class="gallery__overlay">Технокряк это современная площадка распространения
+                                    коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="gallery__border">
+                                <h2 class="gallery__subtitle">Проект LAB</h2>
+                                <p class="gallery__text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="grid__items">
+                        <a class="gallery__link" href="">
+                            <div class="gallery__overlay-box">
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/desktop/gallery_desktop_09.jpg 1x, ./images/portfolio/desktop/gallery_desktop@2_09.jpg 2x"
+                                        media="(min-width:1200px)" />
+                                    <source
+                                        srcset="./images/portfolio/tablet/gallery_tablet_09.jpg 1x, ./images/portfolio/tablet/gallery_tablet@2_09.jpg 2x"
+                                        media="(min-width:768px)">
+                                    <source
+                                        srcset="./images/portfolio/phone/gallery_phone_09.jpg 1x, ./images/portfolio/phone/gallery_phone@2_09.jpg 2x "
+                                        media="(max-width: 767.98px)">
+                                    <img class="gallery__img" src="./images/portfolio/desktop/gallery_desktop_09.jpg" alt="ноутбук с открытым приложением">
+                                </picture>
+                               
+                                <p class="gallery__overlay">Технокряк это современная площадка распространения
+                                    коронавируса. Компании используют эту платформу для цифрового
+                                    шпионажа и атак на защищённые сервера конкурентов.</p>
+                            </div>
+                            <div class="gallery__border">
+                                <h2 class="gallery__subtitle">Growing Business</h2>
+                                <p class="gallery__text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__box">
+            <div class="footer__container-address">
+                <a class="logo  logo--footer" href="./index.html">Web<span class="logo__text--white">Studio</span></a>
+                <address class="address">
+                    <ul class="list address__list">
+                        <li class="address__town">г. Киев, пр-т Леси Украинки, 26</li>
+                        <li class="address__item"><a class="address__link"
+                                href="mailtoinfo@example.com">info@example.com</a>
+                        </li>
+                        <li class="address__item"><a class="address__link" href="tel+380991111111">+38 099 111 11
+                                11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer__container-social">
+                <p class="footer__text">присоединяйтесь</p>
+                <ul class="social-list list social-list--footer">
+                    <li class="social-list__item">
+                        <a target="_blank" rel="noreferrer noopener" class="social-list__link" href=""
+                            aria-label="инстаграмм">
+                            <svg class="social-list__icon social-list__icon--footer">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a target="_blank" rel="noreferrer noopener" class="social-list__link" href="" aria-label="твиттер">
+                            <svg class="social-list__icon social-list__icon--footer">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a target="_blank" rel="noreferrer noopener" class="social-list__link" href="" aria-label="фейсбук">
+                            <svg class="social-list__icon social-list__icon--footer">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a target="_blank" rel="noreferrer noopener" class="social-list__link" href=""
+                            aria-label="линкедин">
+                            <svg class="social-list__icon social-list__icon--footer">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div class="footer__container-form">
+                <p class="footer__form-text">Подпишитесь на рассылку</p>
+                <form class="footer__form">
+                    <label class="footer__label">
+                        <input required class="footer__input" placeholder="E-mail" type="email" name="user-mail-footer"
+                            id="user-mail">
+                    </label>
+                    <button type="submit" class="button footer__button">Подписаться
+                        <svg class="footer__icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+    
+    </footer>
+<script src="./js/menu.js"></script>
+</body>
+
+</html>

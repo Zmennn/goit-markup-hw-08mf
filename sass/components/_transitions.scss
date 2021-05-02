@@ -1,0 +1,49 @@
+.nav__link,
+.contacts__link,
+.button,
+.social-list__link,
+.regular-customers__link,
+.address__link,
+.gallery__overlay,
+.button2,
+.gallery__link,
+.modal__off,
+.backdrop,
+.footer__button,
+.modal__input,
+.modal__input-icon,
+.mobile-menu-button,
+.mobile-menu {
+  transition-duration: $time-duration;
+  transition-timing-function: $transition-timing-function;
+}
+
+.nav__link,
+.contacts__link,
+.address__link {
+  transition-property: color;
+}
+
+.button,
+.footer .social-list__link,
+.footer__button {
+  transition-property: background-color;
+}
+
+.regular-customers__link {
+  transition-property: border-color, color;
+}
+
+.button2 {
+  transition-property: box-shadow, background-color, color;
+}
+.gallery__link {
+  transition-property: box-shadow;
+}
+
+.team .social-list__link {
+  transition-property: background-color, fill;
+}
+.mobile-menu-button {
+  transition-property: fill;
+}

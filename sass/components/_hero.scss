@@ -1,0 +1,106 @@
+.hero {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background/hero.jpg);
+  max-width: 1600px;
+  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero {
+  @include retina2 {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-background/hero@2.jpg);
+  }
+}
+.hero {
+  @include tablet {
+    width: 768px;
+    height: 400px;
+    padding-top: 118px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-background/hero-tablet.jpg);
+  }
+}
+.hero {
+  @include tablet {
+    @include retina2 {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-background/hero-tablet@2.jpg);
+    }
+  }
+}
+.hero {
+  @include phone {
+    max-width: 480px;
+    min-width: 320px;
+    height: 400px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-background/hero-phone.jpg);
+  }
+}
+.hero {
+  @include phone {
+    @include retina2 {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-background/hero-phone@2.jpg);
+    }
+  }
+}
+.hero {
+  @include mini {
+    width: 100vw;
+    min-width: 320px;
+  }
+}
+
+.hero__title {
+  color: $primery-bg-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.hero__title {
+  @include tablet {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+.hero__container {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.hero__container {
+  @include tablet {
+    width: 360px;
+  }
+}
+.hero__container {
+  @include mini {
+    width: 320px;
+  }
+}

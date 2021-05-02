@@ -1,0 +1,37 @@
+.logo {
+  font-family: $logo-font, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+.logo__text--black {
+  color: $second-logo-color;
+}
+.logo__text--white {
+  color: $primery-bg-color;
+}
+.logo {
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+  }
+}
+.logo {
+  @include phone {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+.logo--footer {
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}

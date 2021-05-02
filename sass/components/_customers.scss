@@ -1,0 +1,46 @@
+.regular-customers__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primari-title-color;
+  margin-bottom: 50px;
+}
+.regular-customers__title {
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
+.regular-customers__item {
+  --grid-item: 6;
+  height: 90px;
+}
+.regular-customers__item {
+  @include tablet {
+    --grid-item: 3;
+  }
+}
+.regular-customers__item {
+  @include phone {
+    --grid-item: 2;
+  }
+}
+.regular-customers__link {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $icon-color;
+  color: $icon-color;
+  border-radius: 4px;
+  &:focus,
+  &:hover {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.regular-customers__icon {
+  fill: currentColor;
+}
