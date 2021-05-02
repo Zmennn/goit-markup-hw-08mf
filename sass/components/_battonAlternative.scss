@@ -27,15 +27,23 @@
 }
 .portfolio__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: start;
   flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .portfolio__list {
-  @include phone {
-    margin-bottom: 35px;
-    justify-content: start;
+  @include tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+.portfolio__list {
+  @include desktop {
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -44,7 +52,11 @@
 }
 
 .portfolio__item {
-  @include phone {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.portfolio__item {
+  @include tablet {
+    margin-bottom: 0px;
   }
 }

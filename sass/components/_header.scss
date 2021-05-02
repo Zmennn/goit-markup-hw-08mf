@@ -25,45 +25,67 @@
     border-radius: 2px;
   }
 }
-.contacts__link {
-  display: inline-flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: $primary-text-color;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-    color: $accent-color;
-  }
-}
+
 .contacts__link {
   @include tablet {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.167px;
     letter-spacing: 0.02em;
+    display: inline-flex;
+    align-items: center;
+    color: $primary-text-color;
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      color: $accent-color;
+    }
   }
 }
-.nav__link,
+.contacts__link--mail {
+  @include tablet {
+    padding-top: 21px;
+    padding-bottom: 5px;
+  }
+}
+.contacts__link--tel {
+  @include tablet {
+    padding-top: 5px;
+    padding-bottom: 21px;
+  }
+}
+
 .contacts__link {
+  @include desktop {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.nav__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .header {
+  height: 60px;
   border-bottom: 1px solid #ececec;
-  height: 80px;
   display: flex;
   align-items: center;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
+
 .header {
-  @include phone {
-    height: 60px;
+  @include tablet {
+    height: 80px;
   }
 }
 .header__container {
@@ -71,11 +93,7 @@
   display: flex;
   justify-content: space-between;
 }
-.contacts__item:not(:last-child) {
-  @include desktop {
-    margin-right: 50px;
-  }
-}
+
 .nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -93,24 +111,21 @@
   margin-right: 10px;
 }
 .contacts {
-  margin-left: auto;
-  display: flex;
-}
-.contacts {
   @include tablet {
+    margin-left: auto;
+    display: flex;
     flex-direction: column;
   }
 }
-.contacts__item:nth-child(1) a {
-  @include tablet {
-    padding-top: 21px;
-    padding-bottom: 5px;
+.contacts {
+  @include desktop {
+    flex-direction: row;
   }
 }
-.contacts__item:nth-child(2) a {
-  @include tablet {
-    padding-top: 5px;
-    padding-bottom: 21px;
+
+.contacts__item:not(:last-child) {
+  @include desktop {
+    margin-right: 50px;
   }
 }
 

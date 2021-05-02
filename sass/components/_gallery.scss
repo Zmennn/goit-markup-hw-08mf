@@ -1,14 +1,14 @@
 .gallery {
-  @include desktop {
-    --grid-item: 3;
-  }
+  --grid-item: 1;
+
   @include tablet {
     --grid-item: 2;
   }
-  @include phone {
-    --grid-item: 1;
+  @include desktop {
+    --grid-item: 3;
   }
 }
+
 .gallery__subtitle {
   color: $primari-title-color;
   font-size: 18px;
