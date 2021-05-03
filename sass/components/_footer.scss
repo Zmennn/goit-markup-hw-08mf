@@ -1,21 +1,24 @@
 .footer {
-  background-color: $third-bg-color;
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 60px;
+  max-width: 767px;
+  background-color: $third-bg-color;
 }
+
 .footer {
   @include tablet {
-    padding-top: 40px;
+    max-width: 1200px;
   }
 }
 .footer {
-  @include phone {
-    max-width: 767px;
+  @include desktop {
+    max-width: 1600px;
+    padding-top: 60px;
   }
 }
+
 .footer {
   @include mini {
-    width: 100vw;
     min-width: 320px;
   }
 }
@@ -29,12 +32,6 @@
   &:focus,
   &:hover {
     color: $accent-color;
-  }
-}
-
-.address {
-  @include desktop {
-    margin-top: 20px;
   }
 }
 
@@ -134,22 +131,25 @@
 .footer__icon {
   margin-left: 10px;
 }
-
+.footer__container-social {
+  @include phone {
+    margin-top: 60px;
+  }
+}
+.footer__container-address,
+.footer__container-social {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer__container-address,
 .footer__container-social {
   @include desktop {
     flex-basis: calc((50% - 45px) / 2);
   }
 }
-.footer__container-address,
-.footer__container-social {
-  @include tablet {
-    flex-basis: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 .footer__container-social {
   @include phone {
     margin-top: 60px;
@@ -169,29 +169,24 @@
 }
 .footer__box {
   display: flex;
-  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__box {
-  @include phone {
-    justify-content: center;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 }
 .footer__box {
   @include desktop {
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 }
-.footer__box {
-  @include tablet {
-    flex-wrap: wrap;
-  }
-}
-.footer__box {
-  @include phone {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 .footer__form {
   display: flex;
   align-items: center;
