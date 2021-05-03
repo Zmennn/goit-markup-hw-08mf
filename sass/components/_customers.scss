@@ -5,15 +5,15 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $primari-title-color;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .regular-customers__title {
-  @include tablet {
-    margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 50px;
   }
 }
 .regular-customers__item {
-  --grid-item: 6;
+  --grid-item: 2;
   height: 90px;
 }
 .regular-customers__item {
@@ -22,8 +22,8 @@
   }
 }
 .regular-customers__item {
-  @include phone {
-    --grid-item: 2;
+  @include desktop {
+    --grid-item: 6;
   }
 }
 .regular-customers__link {

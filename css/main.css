@@ -752,12 +752,7 @@ body {
 .address__list {
   display: inline-flex;
   flex-direction: column;
-}
-
-@media screen and (min-width: 768px) {
-  .address__list {
-    align-items: center;
-  }
+  align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1158,17 +1153,17 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .regular-customers__title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
 .regular-customers__item {
-  --grid-item: 6;
+  --grid-item: 2;
   height: 90px;
 }
 
@@ -1178,9 +1173,9 @@ body {
   }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .regular-customers__item {
-    --grid-item: 2;
+    --grid-item: 6;
   }
 }
 
