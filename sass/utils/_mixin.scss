@@ -8,22 +8,22 @@
     @content;
   }
 }
-
-@mixin mini {
-  @media screen and (max-width: 320px) {
+@mixin phone {
+  @media screen and (max-width: 767.98px) {
     @content;
   }
 }
+@mixin mini {
+  @media screen and (max-width: 479.98px) {
+    @content;
+  }
+}
+
 @mixin retina2 {
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    @content;
-  }
-}
-@mixin phone {
-  @media screen and (max-width: 767.98px) {
     @content;
   }
 }
