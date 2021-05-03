@@ -1,6 +1,5 @@
 .our-features__item {
-  --grid-item: 4;
-  height: 251px;
+  --grid-item: 1;
 }
 .our-features__item {
   @include tablet {
@@ -8,9 +7,8 @@
   }
 }
 .our-features__item {
-  @include phone {
-    --grid-item: 1;
-    height: 226px;
+  @include desktop {
+    --grid-item: 4;
   }
 }
 .our-features__container {

@@ -924,40 +924,15 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero.jpg);
-  max-width: 1600px;
-  height: 600px;
-  padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero@2.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    width: 768px;
-    height: 400px;
-    padding-top: 118px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero-tablet.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero-tablet@2.jpg);
-  }
+  padding-top: 118px;
 }
 
 @media screen and (max-width: 767.98px) {
   .hero {
     max-width: 480px;
-    min-width: 320px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero-phone.jpg);
   }
@@ -969,52 +944,68 @@ body {
   }
 }
 
-@media screen and (max-width: 479.98px) {
+@media screen and (min-width: 768px) {
   .hero {
-    width: 100vw;
-    min-width: 320px;
+    width: 768px;
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero-tablet@2.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero.jpg);
+    width: 100%;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero@2.jpg);
   }
 }
 
 .hero__title {
+  font-size: 26px;
+  line-height: 1.62;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
-    font-size: 26px;
-    line-height: 1.62;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
 .hero__container {
-  width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__container {
-    width: 360px;
-  }
-}
-
-@media screen and (max-width: 479.98px) {
-  .hero__container {
-    width: 320px;
+    max-width: 696px;
   }
 }
 
 .our-features__item {
-  --grid-item: 4;
-  height: 251px;
+  --grid-item: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -1023,10 +1014,9 @@ body {
   }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (min-width: 1200px) {
   .our-features__item {
-    --grid-item: 1;
-    height: 226px;
+    --grid-item: 4;
   }
 }
 
@@ -1049,12 +1039,13 @@ body {
 }
 
 .specialization {
-  padding-top: 0;
+  display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .specialization {
-    display: none;
+    padding-top: 0;
+    display: block;
   }
 }
 
