@@ -13,7 +13,8 @@
 .footer {
   @include desktop {
     max-width: 1600px;
-    padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -23,6 +24,25 @@
   }
 }
 
+.footer__box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__box {
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+.footer__box {
+  @include desktop {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
 .address__town {
   color: $primery-bg-color;
 }
@@ -51,6 +71,11 @@
 .address__list {
   @include tablet {
     align-items: center;
+  }
+}
+.address__list {
+  @include desktop {
+    align-items: flex-start;
   }
 }
 .address__item {
@@ -108,17 +133,19 @@
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  width: 358px;
+  max-width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
 }
+
 .footer__label {
-  @include tablet {
-    margin-bottom: 20px;
-    width: 450px;
+  @include desktop {
+    width: 358px;
+    margin-bottom: 0;
   }
 }
 .footer__label {
@@ -136,6 +163,7 @@
     margin-top: 60px;
   }
 }
+
 .footer__container-address,
 .footer__container-social {
   flex-basis: 50%;
@@ -147,62 +175,39 @@
 .footer__container-social {
   @include desktop {
     flex-basis: calc((50% - 45px) / 2);
+    align-items: flex-start;
   }
 }
 
-.footer__container-social {
-  @include phone {
-    margin-top: 60px;
-  }
-}
 .footer__container-form {
-  flex-basis: calc((100% - 30px) / 2);
-}
-.footer__container-form {
-  @include tablet {
-    flex-basis: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 60px;
-  }
-}
-.footer__box {
+  flex-basis: 100%;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-}
-.footer__box {
-  @include tablet {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: baseline;
-  }
-}
-.footer__box {
-  @include desktop {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
+  flex-direction: column;
+  margin-top: 60px;
 }
 
+.footer__container-form {
+  @include desktop {
+    flex-basis: calc((100% - 30px) / 2);
+    margin-top: 0;
+  }
+}
 .footer__form {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  flex-direction: column;
 }
+
 .footer__form {
   @include desktop {
-    justify-content: space-between;
+    width: 570px;
+
+    flex-direction: row;
   }
 }
-.footer__form {
-  @include tablet {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+
 .footer__button {
   @include desktop {
     margin-right: 0;

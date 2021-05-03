@@ -30,8 +30,6 @@
   }
 }
 .logo--footer {
-  @include tablet {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
