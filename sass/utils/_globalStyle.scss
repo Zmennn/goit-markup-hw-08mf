@@ -63,11 +63,7 @@ body {
     padding-top: 60px;
   }
 }
-// .section {
-//   @include phone {
-//     min-width: 320px;
-//   }
-// }
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
