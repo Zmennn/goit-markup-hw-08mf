@@ -919,6 +919,7 @@ body {
 }
 
 .hero {
+  background-size: cover;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -927,7 +928,7 @@ body {
 
 @media screen and (max-width: 767.98px) {
   .hero {
-    max-width: 480px;
+    max-width: 768px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero-phone.jpg);
   }
@@ -941,7 +942,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
+    max-width: 1200px;
     height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-background/hero-tablet.jpg);
   }
