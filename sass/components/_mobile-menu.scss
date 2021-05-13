@@ -85,9 +85,14 @@
   margin-top: auto;
   font-weight: 500;
   font-size: 34px;
-  line-height: 1, 175;
+  line-height: 1.175;
   letter-spacing: 0.02em;
   color: $accent-color;
+}
+.mobile-menu__tel {
+  @include mini {
+    font-size: 30px;
+  }
 }
 .mobile-menu__mail {
   margin-top: 32px;
